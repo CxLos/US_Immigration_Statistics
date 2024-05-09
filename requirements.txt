@@ -1,3 +1,4 @@
+pywin32==306; platform_system == "Windows"
 aiofiles==23.2.1
 ansi2html==1.9.1
 anyio==4.1.0

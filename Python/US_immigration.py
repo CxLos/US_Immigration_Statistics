@@ -98,16 +98,9 @@ max_location = yearly_trend.idxmax()
 
 # DASHBOARD ---------------------------------------------------------------------
 
-# Create a dash application layout
+# Create dash application
 app = dash.Dash(__name__)
 
-# Insight paragraph
-insight_paragraph = html.P(
-    "The chart titled 'Immigrants Obtaining Lawful Permanent Resident Status' provides a visual representation of the trends in legal immigration to the United States over a series of years. By plotting the total number of immigrants who have been granted lawful permanent resident status each year, the chart offers insights into how immigration patterns have evolved. The use of a blue line allows for a clear view of the increase or decrease in numbers annually, which could be influenced by a variety of factors such as changes in immigration law, economic conditions, and global events. The graph's layout, with its bold title and clearly labeled axes, ensures that the information is accessible and understandable. The rounded borders and careful styling of the chart contribute to an aesthetically pleasing presentation that complements the data's significance. This chart is not only informative but also serves as a tool for policymakers, researchers, and the public to understand the impact of immigration policies and trends.",
-    style={'margin': '20px', 'textAlign': 'justify'}
-)
-
-# Dash app layout
 app.layout = html.Div(children=[ 
 
             # Title
