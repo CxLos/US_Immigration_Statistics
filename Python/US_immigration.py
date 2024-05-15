@@ -7,11 +7,14 @@ import plotly.graph_objects as go
 import plotly.express as px
 import datetime
 import os
+import sys
 import dash
 from dash import dcc, html
 # from dash import html
 from dash.dependencies import Output, State
 from dash.development.base_component import Component
+
+print(sys.version)
 
 # WORKING DIRECTORY ----------------------------------------------------------------------
 
@@ -100,6 +103,7 @@ max_location = yearly_trend.idxmax()
 
 # Create dash application
 app = dash.Dash(__name__)
+server= app.server
 
 app.layout = html.Div(children=[ 
 
@@ -216,8 +220,8 @@ app.layout = html.Div(children=[
             ])
 
 # Run the app
-if __name__ == '__main__':
-    app.run_server(debug=True)
+# if __name__ == '__main__':
+#     app.run_server(debug=True)
 
 #  KILL PORT --------------------------------------------
 
