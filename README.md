@@ -1,4 +1,4 @@
-# CxLos-Portfolio
+# US-Immigration-Statistics-Dashboards
 
 ## Description
 
@@ -23,7 +23,7 @@ N/A
 
 <!-- [Portfolio](https://cxlos.github.io/CxLos-Portfolio/) -->
 
-<!-- ![Preview](./cxlos20-portfolio/src/components/pages/screenshots/Screenshot-180706.png) -->
+<!-- ![Preview](./US_Immigration_Statistics/screenshots/Screenshot-180706.png) -->
 
 ## Badges
 
