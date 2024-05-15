@@ -21,9 +21,9 @@ N/A
 
 ## Usage
 
-[Portfolio](https://cxlos.github.io/CxLos-Portfolio/)
+<!-- [Portfolio](https://cxlos.github.io/CxLos-Portfolio/) -->
 
-![Preview](./cxlos20-portfolio/src/components/pages/screenshots/Screenshot-180706.png)
+<!-- ![Preview](./cxlos20-portfolio/src/components/pages/screenshots/Screenshot-180706.png) -->
 
 ## Badges
 
