@@ -242,3 +242,7 @@ app.layout = html.Div(children=[
 
 # Install all dependencies in the requirements file:
 # pip install -r requirements.txt
+
+# Check dependency tree:
+# pipdeptree
+# pip show package-name
