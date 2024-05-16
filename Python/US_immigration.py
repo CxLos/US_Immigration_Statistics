@@ -246,3 +246,13 @@ app.layout = html.Div(children=[
 # Check dependency tree:
 # pipdeptree
 # pip show package-name
+
+# Clear Heroku Cache:
+# heroku plugins:install heroku-repo
+# heroku repo:purge_cache -a us-immigration-statistics
+
+# Heroku:
+# heroku login
+# heroku create your-app-name
+# heroku git:remote -a new-app-name
+# git push heroku main
