@@ -29,10 +29,25 @@ imm_dir = os.path.join(current_dir, "US_Immigration_Statistics")
 # List the files and directories in the 'Immigration Statistics 20 yrs' directory
 # print(os.listdir(current_dir))
 
+# Get the current directory of the script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+# print(script_dir)
+
+# Define the relative path to your CSV file
+relative_path = 'Data/us_imm_stats.csv'
+
+# Join the script directory with the relative path to get the full file path
+file_path = os.path.join(script_dir, relative_path)
+
+# Read the CSV file using the full file path
+df = pd.read_csv(file_path)
+print(df.head())
+
 # DATA -----------------------------------------------------------------------
 
-file = r'C:\Users\CxLos\OneDrive\Documents\Portfolio Projects\US_Immigration_Statistics\Data\us_imm_stats.csv'
-df = pd.read_csv(file)
+# file = r'C:\Users\CxLos\OneDrive\Documents\Portfolio Projects\US_Immigration_Statistics\Data\us_imm_stats.csv'
+# file = 'Data/us_imm_stats.csv'
+# df = pd.read_csv(file)
 
 years = list(map(str, range(1980, 2021)))
 # print('Years:', years)
@@ -221,7 +236,9 @@ app.layout = html.Div(children=[
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=False, port=8055)
+    app.run_server(debug=False, 
+                  #  port=8055
+                   )
 
 #  KILL PORT --------------------------------------------
 
