@@ -41,7 +41,7 @@ file_path = os.path.join(script_dir, relative_path)
 
 # Read the CSV file using the full file path
 df = pd.read_csv(file_path)
-print(df.head())
+# print(df.head())
 
 # DATA -----------------------------------------------------------------------
 
@@ -72,7 +72,7 @@ for column in columns_to_convert:
 df['Immigrants Obtaining Lawful Permanent Resident Status'] = pd.to_numeric(df['Immigrants Obtaining Lawful Permanent Resident Status'], errors='coerce')
 # df['Year'] = pd.to_numeric(df['Year'], errors='coerce')
 
-print(df.head(10))
+# print(df.head(10))
 # print('Column Names:', df.columns)
 # print('DF Shape:', df.shape)
 # print('Dtypes:',df.dtypes)
@@ -172,7 +172,7 @@ app.layout = html.Div(children=[
                                           color='black'))
                                 ), 
                                 html.P(
-                                  "This line chart illustrates the number of immigrants who obtained lawful permanent resident status in the United States over the years. The upward or downward trends can indicate the effects of policy changes, economic factors, and global events on immigration.",
+                                  "This line chart illustrates the number of Refugee in the United States over the years. The peak in immigration in 1980 could most likely be attributed to refugees primarily from Vietnam, Cambodia, and Laos as the US allowed them into the country after the Vietnam War.",
                                   style={
                                       'textAlign': 'justify',
                                       'margin': '20px',
@@ -199,7 +199,7 @@ app.layout = html.Div(children=[
                                 color='black'))
                       ), 
                       html.P(
-                        "This line chart illustrates the number of immigrants who obtained lawful permanent resident status in the United States over the years. The upward or downward trends can indicate the effects of policy changes, economic factors, and global events on immigration.",
+                        "This line chart illustrates the trend in noncitizen apprehensions over the years. Noncitizen apprehensions refer to instances where individuals without citizenship status are detained or arrested. Understanding the trends in apprehensions can provide insights into changes in immigration enforcement, border security, and migration patterns. Factors influencing these trends may include shifts in immigration policies, socio-economic conditions, and geopolitical events.",
                         style={
                             'textAlign': 'justify',
                             'margin': '20px',
@@ -223,7 +223,7 @@ app.layout = html.Div(children=[
                                 color='black'))
                       ), 
                       html.P(
-                        "This line chart illustrates the number of immigrants who obtained lawful permanent resident status in the United States over the years. The upward or downward trends can indicate the effects of policy changes, economic factors, and global events on immigration.",
+                        "This line chart illustrates the trend in non-citizen removals over the years. Non-citizen removals refer to instances where individuals without citizenship status are deported or expelled from the country. Understanding the trends in removals can provide insights into changes in immigration enforcement, deportation policies, and migration patterns. Factors influencing these trends may include shifts in immigration laws, diplomatic relations, and international agreements.",
                         style={
                             'textAlign': 'justify',
                             'margin': '20px',
