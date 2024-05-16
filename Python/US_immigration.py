@@ -232,7 +232,6 @@ app.layout = html.Div(children=[
 # Host Application ------------------------------
 
 # 1. pip freeze > requirements.txt
-# pip install -r requirements.txt
 # 2. add this to procfile: 'web: gunicorn <your_app_filename>:app'
 # 3. heroku login
 # 4. heroku create
@@ -240,3 +239,6 @@ app.layout = html.Div(children=[
 
 # Update PIP Setup Tools:
 # pip install --upgrade pip setuptools
+
+# Install all dependencies in the requirements file:
+# pip install -r requirements.txt
