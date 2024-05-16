@@ -31,7 +31,7 @@ imm_dir = os.path.join(current_dir, "US_Immigration_Statistics")
 
 # DATA -----------------------------------------------------------------------
 
-file = r'C:\Users\CxLos\OneDrive\Documents\Portfolio Projects\US_Immigration_Statistics\Data\US_Immigration_Statistics.csv'
+file = r'C:\Users\CxLos\OneDrive\Documents\Portfolio Projects\US_Immigration_Statistics\Data\us_imm_stats.csv'
 df = pd.read_csv(file)
 
 years = list(map(str, range(1980, 2021)))
@@ -57,7 +57,7 @@ for column in columns_to_convert:
 df['Immigrants Obtaining Lawful Permanent Resident Status'] = pd.to_numeric(df['Immigrants Obtaining Lawful Permanent Resident Status'], errors='coerce')
 # df['Year'] = pd.to_numeric(df['Year'], errors='coerce')
 
-# print(df.head(10))
+print(df.head(10))
 # print('Column Names:', df.columns)
 # print('DF Shape:', df.shape)
 # print('Dtypes:',df.dtypes)
@@ -220,8 +220,8 @@ app.layout = html.Div(children=[
             ])
 
 # Run the app
-# if __name__ == '__main__':
-#     app.run_server(debug=True)
+if __name__ == '__main__':
+    app.run_server(debug=False)
 
 #  KILL PORT --------------------------------------------
 
