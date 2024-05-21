@@ -2,48 +2,42 @@
 
 ## Description
 
-
+This project provides interactive dashboards to visualize US immigration statistics over time. Utilizing Dash, Plotly, pandas, and other Python libraries, the dashboards offer insights into various types of delays affecting flights within the United States. The visualizations include carrier delays, weather delays, NAS delays, security delays, and late aircraft delays, presented in a user-friendly interface.
 
 ## Table of Contents 
 	
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
-- [Badges](#badges)
-- [Features](#features)
-- [Tests](#tests)
-
 
 ## Installation
 
-N/A
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/CxLos/US_Immigration_Statistics
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd US-Immigration-Statistics-Dashboards
+    ```
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Usage
 
-<!-- [Portfolio](https://cxlos.github.io/CxLos-Portfolio/) -->
+To launch the dashboard, execute the following command in your terminal or click the following link:
 
-<!-- ![Preview](./US_Immigration_Statistics/screenshots/Screenshot-180706.png) -->
+[US Immigration Statistics Dashboard](https://us-immigration-statistics-b0f238985cfe.herokuapp.com/)
 
-## Badges
+```bash
+python app.py
+```
 
-N/A
-
-## Features
-
-N/A
-
-## How to Contribute
-
-N/A
-
-## Tests
-
-N/A
-
-## Credits
-
-N/A
+![Preview](./screenshots/Screenshot-223715.png)
 
 ## License
 
