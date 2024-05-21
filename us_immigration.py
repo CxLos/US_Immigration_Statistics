@@ -118,6 +118,8 @@ max_location = yearly_trend.idxmax()
 
 # Create dash application
 app = dash.Dash(__name__)
+
+# 
 server= app.server
 
 app.layout = html.Div(children=[ 
