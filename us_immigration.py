@@ -124,10 +124,23 @@ server= app.server
 
 app.layout = html.Div(children=[ 
 
-            # Title
-            html.H1('US Immigration Statistics', 
-              style={'textAlign': 'center', 'color': 'cadetblue',
-              'fontSize': 45, 'font-family':'Calibri'}),
+            html.Div([
+
+                html.H1('US Immigration Statistics', 
+                style={'textAlign': 'center', 'color': 'cadetblue',
+                'fontSize': 45, 'font-family':'Calibri', 'marginBottom':'5px'}),
+
+                html.A(
+                'Repo',
+                href='https://github.com/CxLos/US_Immigration_Statistics',
+                className='btn')],
+                style={'display': 'flex', 
+                        'flexDirection':'column',
+                        'textAlign': 'center', 
+                        'margin':'0px'}
+            ),
+
+            
 
             # html.Br(),
 
@@ -238,7 +251,7 @@ app.layout = html.Div(children=[
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=False, 
+    app.run_server(debug=True, 
                   #  port=8055
                    )
 
