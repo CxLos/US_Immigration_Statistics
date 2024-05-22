@@ -51,7 +51,12 @@ The data for this project was sourced from Kaggle. The link to the data can be f
 
 ### Plans for collected data:
 
-* To observe trends in immigration to the country to find out what major world conflicts were taking place that could be the driving force behind these numbers
+- Explore additional datasets related to immigration trends, such as visa categories, country-specific immigration patterns, and demographic information of immigrants.
+- Integrate real-time data sources or regularly updated datasets to keep the immigration statistics dashboard current and reflective of ongoing trends.
+- Enhance data visualization capabilities by incorporating interactive maps, network graphs, and temporal analysis tools to provide a comprehensive view of immigration dynamics.
+- Implement sentiment analysis or natural language processing (NLP) techniques to analyze public discourse and media coverage related to immigration, offering contextual insights into immigration trends.
+- Collaborate with governmental agencies, research institutions, and advocacy groups to access authoritative immigration data and ensure data accuracy and relevance.
+- Develop machine learning models to forecast future immigration trends based on historical data, policy changes, economic indicators, and geopolitical events.
 
 ## Results
 
