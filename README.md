@@ -23,7 +23,7 @@ To run this project locally, follow these steps:
     ```
 2. Navigate to the project directory:
     ```bash
-    cd US-Immigration-Statistics-Dashboards
+    cd US-Immigration-Statistics
     ```
 3. Install the required dependencies:
     ```bash
