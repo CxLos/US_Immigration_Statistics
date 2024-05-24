@@ -125,10 +125,15 @@ server= app.server
 app.layout = html.Div(children=[ 
 
             html.Div([
-
+                
                 html.H1('US Immigration Statistics', 
-                style={'textAlign': 'center', 'color': 'cadetblue',
-                'fontSize': 45, 'font-family':'Calibri', 'marginBottom':'5px'}),
+                className='title',
+                style={'textAlign': 'center', 
+                       'color': 'cadetblue',
+                'fontSize': 45, 
+                'font-family':'Calibri', 
+                # 'marginBottom':'5px'
+                }),
 
                 html.A(
                 'Repo',
@@ -145,9 +150,14 @@ app.layout = html.Div(children=[
             # html.Br(),
 
             # Row 1
-            html.Div(children=[
-                      html.Div(children=[
-                              dcc.Graph(
+            html.Div(
+                className='row1',
+                children=[
+                      html.Div(
+                          className='graph1',
+                          children=[
+                              dcc.Graph( 
+                                    
                                     figure=px.line(df.groupby('Year')['Immigrants Obtaining Lawful Permanent Resident Status'].sum().reset_index(), 
                                         x='Year', y='Immigrants Obtaining Lawful Permanent Resident Status').
                                         update_traces(line=dict(color='blue')).  # Change the line color
@@ -170,9 +180,17 @@ app.layout = html.Div(children=[
                                       'color': 'black'          
                                   })],
 
-                                style={'border':'2px solid black', 'border-radius':'10px', 'margin':'10px', 'width':'48%', 'padding':'10px'}),
+                                style={
+                                    # 'border':'2px solid black', 
+                                    #    'border-radius':'10px', 
+                                    #    'margin':'0px', 
+                                    #    'width':'48%', 
+                                    #    'padding':'10px'
+                                       }),
 
-                      html.Div(children=[
+                      html.Div(
+                          className='graph2',
+                          children=[
                               dcc.Graph(
                                     figure=px.line(df.groupby('Year')['Refugee Arrivals'].sum().reset_index(), 
                                         x='Year', y='Refugee Arrivals').
@@ -194,12 +212,20 @@ app.layout = html.Div(children=[
                                       'font-family': 'Calibri', 
                                       'fontSize': '17px',        
                                       'color': 'black' })],
-                                style={'border':'2px solid black', 'border-radius':'10px', 'margin':'10px', 'width':'48%'})], 
-                                style={'display': 'flex', 'textAlign': 'center'}),
+                                style={
+                                    # 'border':'2px solid black', 
+                                    #    'border-radius':'10px', 
+                                       'margin':'0px', 
+                                       'width':'48%'})], 
+                                # style={'display': 'flex', 'textAlign': 'center'}
+                                ),
 
             # Row 2
-            html.Div(children=[
-                      html.Div(children=[
+            html.Div(
+                className='row2',
+                children=[
+                      html.Div(className='graph3',
+                               children=[
                              dcc.Graph(
                           figure=px.line(df.groupby('Year')['Noncitizen Apprehensions'].sum().reset_index(), 
                               x='Year', y='Noncitizen Apprehensions').
@@ -221,10 +247,17 @@ app.layout = html.Div(children=[
                             'font-family': 'Calibri', 
                             'fontSize': '17px',        
                             'color': 'black' })],
-                      style={'border':'2px solid black', 'border-radius':'10px', 'margin':'10px', 'width':'49%'}),
+                      style={
+                        #   'border':'2px solid black', 
+                        #      'border-radius':'10px', 
+                            #  'margin':'10px', 
+                            #  'width':'49%'
+                             }),
 
-                      html.Div(children=[
-                          dcc.Graph(
+                      html.Div(
+                          className='graph4',
+                          children=[
+                          dcc.Graph( 
                           figure=px.line(df.groupby('Year')['Noncitizen Removals'].sum().reset_index(), 
                               x='Year', y='Noncitizen Removals').
                               update_traces(line=dict(color='orange')).  # Change the line color
@@ -245,7 +278,12 @@ app.layout = html.Div(children=[
                             'font-family': 'Calibri', 
                             'fontSize': '17px',        
                             'color': 'black' })],
-                      style={'border':'2px solid black', 'border-radius':'10px', 'margin':'10px', 'width':'48%'})], 
+                      style={
+                        #   'border':'2px solid black', 
+                        #      'border-radius':'10px', 
+                            #  'margin':'0px', 
+                            #  'width':'48%'
+                             })], 
                       style={'display': 'flex', 'textAlign': 'center'})
             ])
 
